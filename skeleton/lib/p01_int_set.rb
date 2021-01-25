@@ -73,8 +73,8 @@ class ResizingIntSet
   attr_reader :count
 
   def initialize(num_buckets = 20)
-    @store = Array.new(num_buckets) { Array.new } [[]]
-    @count = 0 set.length
+    @store = Array.new(num_buckets) { Array.new }
+    @count = 0
     @set = Set.new {}
   end
 
